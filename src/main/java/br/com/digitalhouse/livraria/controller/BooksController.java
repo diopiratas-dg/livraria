@@ -4,7 +4,6 @@ import br.com.digitalhouse.livraria.model.Books;
 import br.com.digitalhouse.livraria.repository.BooksRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
