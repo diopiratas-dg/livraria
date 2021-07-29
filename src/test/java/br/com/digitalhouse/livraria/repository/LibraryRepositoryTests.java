@@ -1,5 +1,6 @@
 package br.com.digitalhouse.livraria.repository;
 
+import br.com.digitalhouse.livraria.model.Library;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ public class LibraryRepositoryTests {
         Library library = new Library("TDD na Pratica", 87.20, "Digitalsers");
         libraryRepository.save(library);
 
-        Integer countBooks = libraryRepository.findAll.size();
+        Integer countBooks = Math.toIntExact(libraryRepository.findAll().stream().count());
         assertEquals(1, countBooks);
     }
 }
