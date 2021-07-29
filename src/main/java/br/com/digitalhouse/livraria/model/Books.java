@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "livros")
-public class Library {
+public class Books {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,9 +19,9 @@ public class Library {
     @Column(nullable = false, name = "editora")
     private String vendor;
 
-    public Library(){}
+    public Books(){}
 
-    public Library(String name, Double value, String vendor){
+    public Books(String name, Double value, String vendor){
         this.name = name;
         this.value = value;
         this.vendor = vendor;
